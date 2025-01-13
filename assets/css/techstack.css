@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+html[light-mode="light"] {
+  --bg1-color: rgba(0, 0, 0, 0);
+  --text-color: #6c757d;
+  --shadow-col1: #babdc2;
+  --shadow-col2: #ffffff;
+  --meta-col: #444;
+  --head-col: black;
+}
+
+html[light-mode="dark"] {
+  --bg1-color: #272727;
+  --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
+  --shadow-col1: #191919;
+  --shadow-col2: #1d1d1d;
+  --meta-col: rgb(155, 149, 149);
+  --head-col: #fff;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+
+/* .main{
+  width: 100%;
+   padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto; 
+} */
+
+/* Tech Stack Cards */
+.techstack-box{
+    /* position: absolute; */
+    /* left: 0; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+}
+.tech_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 13px;
+    background-color: rgb(65, 62, 65);
+    width: 45.7vw;
+    margin:3.5em 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 2px black;
+}
+html[light-mode="light"] .tech_card{
+    background-color: white;
+    color: #303030;
+    box-shadow: 0px 0px 10px #303030;
+}
+.tech_card img{
+    width: 120px;
+    height: 120px;
+    /* border: 1px solid black; */
+    /* box-shadow: 8px 8px 7px black; */
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 20px;
+    
+}
+.tech_card h4{
+    font-weight: bold;
+    font-family: cursive;
+}
+.main-heading{
+    font-weight: 700;
+    
+}
+.main-heading .my_techstacks{
+    color: #4e00bb;
+    text-shadow: 0px 0px 15px #4e00bb;
+}
+html[light-mode="light"] .main-heading .my_techstacks{
+    text-shadow: none !important;
+}
+.skill-head{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.skill-head .my_skill{
+    color: #4e00bb;
+    text-shadow: 0px 0px 15px #4e00bb;
+}
+html[light-mode="light"] .skill-head .my_skill{
+    text-shadow: none !important;
+}
+.tech_card .card_img img{
+    animation: scale_anime 2s infinite ease-in-out;
+}
+html[light-mode="light"] .tech_card img{
+    animation: scale_anime_dark 2s infinite ease-in-out;
+
+}
+@keyframes scale_anime_dark {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }100%{
+        transform: scale(1);
+    }
+}
+@keyframes scale_anime {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }100%{
+        transform: scale(1);
+    }
+}
+#svg_css_text {
+    animation: translate_forward 2s infinite ease-in-out;
+}
+
+#svg_html_text {
+    animation: translate_backward 2s infinite ease-in-out;
+}
+
+@keyframes translate_forward {
+    0% {
+        transform: translateX(12px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(12px);
+    }
+}
+
+@keyframes translate_backward {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(12px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.techstacks_icons {
+    align-items: center;
+    justify-content: center;
+}
+
+.techstacks_icons .techstack_icon {
+    padding: 5px 10px;
+
+}
+
+.techstacks_icons .techstack_icon i {
+    font-size: 2.5rem;
+    opacity: .7;
+}
+html[light-mode="light"] .techstacks_icons .techstack_icon i {
+    font-size: 2.5rem;
+    opacity: 1;
+}
+div.techstack_icon>i:hover {
+    opacity: 1;
+    transition: opacity .2s linear;
+    transform: scale(1.3);
+}
+
+div.html_icon.techstack_icon>i.fa-html5 {
+    /* color: #FF5733 !important; */
+    display: inline-block;
+    background: linear-gradient(-90deg, #F06529 50%, #E34C26 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+div.techstack_icon>i.fa-sql {
+    display: inline-block;
+    background: linear-gradient(-90deg, #F29111 50%, #003B5C 50%); /* Adjusted colors for SQL */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+div.techstack_icon>i.fa-css3-alt {
+    /* color: #2965f1 !important; */
+    display: inline-block;
+    background: linear-gradient(-90deg, #264de4 50%, #2965f1 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+div.techstack_icon>i.fa-bootstrap {
+    color: #ad428d !important;
+}
+
+div.techstack_icon>i.fa-js-square {
+    color: #F0DB4F;
+}
+
+div.techstack_icon>i.fa-python {
+    display: inline-block;
+    background: linear-gradient(-120deg, #ffde57, #4584b6, #646464);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+div.techstack_icon>i.fa-react {
+    color: #61DBFB;
+}
+
+div.techstack_icon>i.fa-git-alt {
+    color: #F1502F;
+}
+
+div.techstack_icon>i.fa-node {
+    color: #3C873A;
+}
+
+div.techstack_icon>i.fa-cuttlefish {
+    color: #044F88;
+}
+#box1{
+    animation: slide-down 8s infinite linear;
+}
+#box3{
+    animation: slide-up 8s 4s infinite linear;
+}
+@keyframes slide-down {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(212px, 61px)
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+    
+}
+@keyframes slide-up {
+    0%{
+        transform: translate(-212px, -60px);
+    }
+    50%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(-212px, -60px);
+    }
+    
+}
+
+.project_item{
+    margin-top: 4px;
+}
+.project_item a{
+    color: #bb86c9;
+    text-decoration: none;
+}
+html[light-mode="light"] .project_item a{
+    color: #4e00bb ;
+    text-decoration: none;
+}
+@media (max-width:1180px){
+    .tech_card{
+        width: 45vw;
+    }
+    .techstack-box{
+        justify-content: center !important;
+    }
+}
+@media (max-width:1000px){
+    .tech_card{
+        width: 90vw;
+    }
+}
+@media (max-width:450px){
+    .skill-head{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .main-heading{
+        font-size: 25px;
+    }
+    .techstacks_icons .techstack_icon i {
+        font-size: 1.8rem;
+    }
+    .pre-heading{
+        font-size: 13px;
+    }
+}
+@media (max-width:350px){
+    .techstack-box{
+        justify-content: center;
+    }
+    .tech_card{
+        width: 95vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;  /* Dark background for the entire page */
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Buttons */
+button {
+    padding: 12px 35px;
+    background-color: #6a4c9c; /* Dark Purple */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #4e3880; /* Lighter Purple on hover */
+    transform: translateY(-3px); /* Slight hover effect for buttons */
+}
+
+/* Grid Layout for Skills Sections */
+.tech-skills, .power-skills {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Skill Card Styles */
+.skill-card {
+    background-color: #2a2a45; /* Dark Blue */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Elevated hover effect */
+}
+
+/* Hover Effect for Flip Animation */
+.skill-card:hover .skill-info {
+    transform: rotateY(-0deg); /* Flip effect for the content */
+}
+
+.skill-img {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover Scaling of Image */
+.skill-card:hover .skill-img img {
+    transform: scale(1.2);
+    opacity: 0.9; /* Slight fade effect */
+}
+
+/* Info inside Skill Cards */
+.skill-info {
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 50, 100, 0.8), rgba(0, 0, 50, 0.8)); /* Gradient background */
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    transform: rotateY(0);
+    backface-visibility: hidden;
+    transition: transform 0.3s ease;
+}
+
+.skill-info h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Gradient text for skill descriptions */
+.skill-info p {
+    font-size: 16px;
+    color: #f2f0f0;
+    background-image: linear-gradient(to right, #eadaf1, #e9f4fb);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Skill Card Front and Back (Flip Effect) */
+.skill-card .skill-info-back {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+/* AOS Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="fade-up"] {
+    animation: fadeIn 0.6s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
