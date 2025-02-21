@@ -215,7 +215,7 @@ Throughout my career, I have completed <span class="highlight">25+ projects</spa
                         <a href="mailto:vedantchhetri64@gmail.com">vedantchhetri64@gmail.com</a>
                     </li>
                 </ul>
-               <a href="https://drive.google.com/uc?export=download&id=1-TsO1QhFW-YthD3GgWkd9TkZxCyCLax_" class="resume-button" download>Download Resume</a>
+               <a href="https://drive.google.com/uc?export=download&id=1lUKT-exsm50CeS7iWtT9MHVFrylrQdH6" class="resume-button" download>Download Resume</a>
 
             </section>
         </div>
