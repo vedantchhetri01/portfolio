@@ -4,19 +4,30 @@ AOS.init();
 
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
+
+  {
+    title: "Data Reporting Specialist",
+    cardImage: "assets/images/experience-page/finl.png",
+    place: "Supporting Google via Marketstar",
+    time: "(Jun, 2025 - present)",
+    desp: "<li>Improved customer insights by designing efficient SQL/BigQuery data pipelines and building interactive Power BI dashboards; leveraged Google internal tools to streamline analysis and accelerate reporting cycles.</li><br> <li>Designed KPI frameworks and automated reporting pipelines using Python and Google Sheets; collaborated with cross-functional stakeholders to enhance CRM systems, leading to smoother client workflows and improved decision-making.</li>",
+  },
+
+
+
   {
     title: "Data Analyst",
     cardImage: "assets/images/experience-page/flipkart.png",
     place: "Wyzmindz Solutions Pvt Ltd",
-    time: "(May, 2020 - present) 1 Yr",
-    desp: "<li>Maintained SQL queries to extract, analyze, and report customer data, utilizing advanced database querying techniques to derive comprehensive insights.</li> <li>Developed and maintained Key Performance Indicators (KPIs) to track business performance, while optimizing customer relationship management systems to enhance client interactions and streamline processes.</li>",
+    time: "(Dec, 2023 - Nov, 2024) 1 Yr",
+    desp: "<li>Maintained SQL queries to extract, analyze, and report customer data, utilizing advanced database querying techniques to derive comprehensive insights.</li><br> <li>Developed and maintained Key Performance Indicators (KPIs) to track business performance, while optimizing customer relationship management systems to enhance client interactions and streamline processes.</li>",
   },
   {
     title: "Data Analyst",
     cardImage: "assets/images/experience-page/gsoc.jpg",
     place: "Rahul Steel India",
-    time: "(Mar - Aug, 2019) 1 Yr 7 Mos",
-    desp: "<li>Demonstrated expertise in transforming data into meaningful visual representations using tools such as Tableau, Excel, and Power BI to create compelling data visualizations that enhance understanding and support decision-making.</li><li>Coordinated cross-functional teams to create automated and manual business process models, leading to a 20% increase in key performance indicators for marketing strategy.</li>",
+    time: "(Aug, 2019 - Feb, 2021) 1 Yr 7 Mos",
+    desp: "<li>Demonstrated expertise in transforming data into meaningful visual representations using tools such as Tableau, Excel, and Power BI to create compelling data visualizations that enhance understanding and support decision-making.</li><br><li>Coordinated cross-functional teams to create automated and manual business process models, leading to a 20% increase in key performance indicators for marketing strategy.</li>",
   },
   ];
 
